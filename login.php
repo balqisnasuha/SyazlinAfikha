@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header">
-                <a href="<?= base_url('index.php') ?>" class="h1"><b>SERA HOUSE</b></a>
+                <a href="<?= base_url('index.php') ?>" class="h1"><b>SERRA HOUSE</b></a>
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Sign in to start your session</p>
