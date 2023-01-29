@@ -98,7 +98,7 @@ $reward_model = new Reward_model();
             <!-- Brand Logo -->
             <a href="<?= base_url('index.php') ?>" class="brand-link">
                 <img src="<?= base_url('assets/dist/img/logo/logo.jpg') ?>" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">SERA HOUSE</span>
+                <span class="brand-text font-weight-light">SERRA HOUSE</span>
             </a>
             <!-- Sidebar -->
             <?php include "layout/sidebar.php" ?>
