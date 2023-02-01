@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Reister</title>
+    <title>Register</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?= base_url('assets/dist/img/favicon/favicon.ico') ?>" type="image/x-icon">
     <link rel="icon" href="<?= base_url('assets/dist/img/favicon/favicon.ico') ?>" type="image/x-icon">

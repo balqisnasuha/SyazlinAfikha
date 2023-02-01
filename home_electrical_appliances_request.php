@@ -18,11 +18,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $device_id = $_POST['id'];
         $duration = $_POST['duration'];
         $w = 0;
-        // power / 1000 x 0.622 x hours
+        // power / 1000 x hours
         foreach ($device_id as $key => $d) {
             $device =  $electric_model->get_device_by_id($d);
             $power = $device['device_watt'];
-            $w += $power / 1000 * 0.622 * $duration[$key];
+            $w += $power / 1000 * $duration[$key];
         }
         $dataWatt = array(
             'status' => 'success',
@@ -33,12 +33,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $device_id = $_POST['id'];
         $duration = $_POST['duration'];
         $w = 0;
+        
         // power / 1000 x 0.622 x hours
         foreach ($device_id as $key => $d) {
             $device =  $electric_model->get_device_by_id($d);
             $power = $device['device_watt'];
-            $watt = $power / 1000 * 0.622 * $duration[$key];
-            $w += $watt;
+           $w += $power / 1000 * $duration[$key];
+           $watt = $w / 1000 * 0.622 * $duration[$key];
             $dataElectric = array(
                 'usage_user_id' => $_SESSION['user'],
                 'usage_device_id' => $d,
